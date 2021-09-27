@@ -24,10 +24,11 @@ def convert_to_json(url:str)->json:
 def fetch(json_data:json,filtro:str="moneda",moneda:str="ARS", ciudad:str=None, provincia:str=None,precio:str=None)->list: 
     # El ejercicio pedía solo condición y precio, pero tomé otros valores para poder quizas hacer una medición que muestre la variación del precio en base a los atributos de cada departamento
     
-    filtros = {"moneda":"currency_id",
-               "ciudad":"address",
-               "provincia":"address",
-               "precio":"price"
+    filtros = {
+                "moneda":"currency_id",
+                "ciudad":"address",
+                "provincia":"address",
+                "precio":"price"
                }
     
     
@@ -136,10 +137,11 @@ def convert_to_jsonfile(dataset)->None:
 # 2. Creo función para filtrar (un filtro simple de un solo filtro para probar experimentar).
 
 def filtrar(filtro:str, moneda, ciudad, provincia, precio)->list:
-    filtros = {"moneda":"currency_id",
-               "ciudad":"address",
-               "provincia":"address",
-               "precio":"price"
+    filtros = {
+                "moneda":"currency_id",
+                "ciudad":"address",
+                "provincia":"address",
+                "precio":"price"
                }
     parametro = []
     if filtro not in filtros.keys():
