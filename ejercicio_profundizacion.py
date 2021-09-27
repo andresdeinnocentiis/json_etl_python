@@ -38,7 +38,7 @@ def fetch(json_data:json,filtro:str="moneda",moneda:str="ARS", ciudad:str=None, 
     valor_filtro = filtrar(filtro,moneda,ciudad,provincia,precio)
     
         
-    lista_items = ["id","title", "price","address","attributes","condition"]
+    lista_items = ["id","title", "price","address","attributes","condition"] # Creé esta lista para ahorrarme tiempo a la hora de tener que codear y buscar los items que quería agregar.
     dataset = []
     clave = ""
     
